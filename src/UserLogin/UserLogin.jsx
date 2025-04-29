@@ -14,11 +14,11 @@ const UserLogin = () => {
     function login(e) {
         e.preventDefault();
         if (!email.endsWith(".ru")) {
-            console.log("Yalnız .ru domenlərinə icazə verilir.");
+            console.log("Girişə icazə verilmədi");
             return;
         }
         if (password.length < 8) {
-            console.log("Parol ən azı 8 simvol olmalıdır.");
+            console.log("Girişə icazə verilmədi");
             return;
         }
         console.log("Logged in successfully!");
